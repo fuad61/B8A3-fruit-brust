@@ -164,27 +164,27 @@
 
        <section class="max-w-[90%] mx-auto mt-16 font-Lato ">
         <div class="flex flex-col lg:flex-row  lg:justify-between">
-          <div>
+          <div >
             <h1 class="text-4xl font-bold">Deal of the day</h1>
             <p class="text-xs p-2">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
-          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="grid grid-flow-col gap-2 text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value:15;"></span>:
+                <span style="--value:15;"></span><img src="./images/Frame.svg" alt="">
               </span>
               days
             </div> 
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value:10;"></span>:
+                <span style="--value:10;"></span><img src="./images/Frame.svg" alt="">
               </span>
               hours
             </div> 
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:24;"> </span>
-                :
+              <img src="./images/Frame.svg" alt="">
               </span>
               min
             </div> 
@@ -219,7 +219,43 @@
   <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
 </div>
               <div class="card-actions justify-center">
-                <button class=" text-[#F85559] ">Details</button>
+                <!-- Open the modal using ID.showModal() method -->
+<button class=" text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+<dialog id="my_modal_1" class="modal">
+  <form method="dialog" class="modal-box transparent">
+    <div class="card border  border-gray-200 rounded-md shadow-xl p-9">
+    <figure><img src="./images/fruit7.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="font-bold text-center text-xl mb-10 ">12.90$ - 18.85$</h2>
+      <div class="h-[1px] w-36 bg-slate-200 mx-auto"></div>
+      <p class="text-center">Orange</p>
+      <div class="rating rating-half bg-opacity-30 mx-auto mt-6 mb-8">
+<input type="radio" name="rating-10" class="rating-hidden" />
+<input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+<input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+<input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+<input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+<input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+<input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+<input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+<input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+<input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+<input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+</div>
+      <div class="card-actions justify-center">
+        <button class=" text-[#F85559] "><a href="./images/fruit7.png">Details</a></button>
+      </div>
+      <div class="modal-action">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </div>
+    </div>
+  </div>
+  
+</form>
+    
+ 
+</dialog>
               </div>
             </div>
           </div>
@@ -308,18 +344,18 @@
 
 
        <section class=" mb-16">  
-        <div class="hero h-full lg:h-[100vh] rounded-3xl w-11/12 mx-auto" style=" background-image: url(./images/banner1.png);" class="">
+        <div class="hero min-h-screen rounded-3xl w-11/12 mx-auto" style=" background-image: url(./images/banner1.png);" class="">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-top text-neutral-content">
-            <!-- <div class="max-w-xl   ">
+            <div class="max-w-xl lg:absolute  mb-80   ">
               <h1 class="mb-5 text-5xl font-bold  ">Meet the team section</h1>
               <p class="mb-5 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
               
-            </div> -->
+            </div>
 
              <!-- card transparent -->
-             <div class="grid grid-cols-1 lg:grid-cols-4 justify-between mx-auto gap-x-24  relative lg:top-44 ">
+             <div class="grid grid-cols-1 lg:grid-cols-4 justify-between mx-auto gap-x-24  relative  lg:top-40">
 
               <div class="card gap- bg-transparent ">
                 <figure><img src="./images/member1.png" alt="Photo" /></figure>
@@ -407,13 +443,15 @@
           <h2 class="text-4xl">Fruit Burst</h2>
         </div>
       </div>
-      <div class="grid lg:grid-flow-col grid-cols-4 gap-12">
+      <div class="flex flex-wrap gap-12 mx-auto">
         <a class="link link-hover">About us</a> 
         <a class="link link-hover">Contact</a> 
         <a class="link link-hover">Jobs</a> 
         <a class="link link-hover">Jobs</a> 
+        
         <a class="link link-hover">Press kit</a>
         <a class="link link-hover">Press kit</a>
+        
       </div> 
       <div>
         <div class="grid grid-flow-col gap-4">
